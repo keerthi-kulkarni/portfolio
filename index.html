@@ -127,13 +127,11 @@
   @media (max-width:480px){
     .orbit-wrap{ max-width: 280px; }
     .orbit-dot{ width:28px; height:28px; }
-    .od1{ margin-left:-14px; }
-    .od2{ right:-8px; }
-    .od4{ left:-8px; }
   }
   .ring{
-    position:absolute; border-radius:50%; border:1px solid var(--line); inset:0;
+    position:absolute; border-radius:50%; border:1px solid var(--line);
   }
+  .ring.r1{ inset: 6.5%; }
   .ring.r2{ inset: 13.75%; border-color: rgba(94,234,212,0.25); }
   .avatar{
     position:absolute; inset: 21%;
@@ -157,10 +155,10 @@
     transform: translate(-50%, -50%);
   }
   .orbit-dot span{ display:block; animation: spin-rev 22s linear infinite; }
-  .od1{ top:0%;   left:50%; animation-duration:18s; }
-  .od2{ top:82%;  left:100%; animation-duration:26s; animation-direction:reverse; }
-  .od3{ top:100%; left:18%;  animation-duration:22s; }
-  .od4{ top:22%;  left:0%;   animation-duration:30s; animation-direction:reverse; }
+  .od1{ top:19.2%; left:80.8%; animation-duration:18s; }
+  .od2{ top:80.8%; left:80.8%; animation-duration:26s; animation-direction:reverse; }
+  .od3{ top:80.8%; left:19.2%; animation-duration:22s; }
+  .od4{ top:19.2%; left:19.2%; animation-duration:30s; animation-direction:reverse; }
 
   @keyframes spin{ from{ transform: translate(-50%,-50%) rotate(0deg); } to{ transform: translate(-50%,-50%) rotate(360deg); } }
 
