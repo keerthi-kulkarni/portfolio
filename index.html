@@ -229,6 +229,12 @@
     font-family: var(--font-mono); font-size:0.7rem; border:1px solid var(--line);
     padding:4px 10px; border-radius:999px; color: var(--paper); background: var(--bg-2);
   }
+  .video-frame{
+    margin-top: 18px; border: 1px solid var(--line); border-radius: 12px;
+    overflow: hidden; background: #0A0714;
+  }
+  .video-frame video{ display:block; width:100%; aspect-ratio: 16/9; background:#000; }
+  .video-fallback{ padding: 34px 20px; text-align:center; color: var(--muted); font-family: var(--font-mono); font-size:0.8rem; }
   .project-demo{
     display:inline-block; margin-top:16px; text-decoration:none;
     font-family: var(--font-mono); font-size:0.8rem; font-weight:500;
@@ -429,6 +435,13 @@
             <span>JavaScript</span><span>React</span><span>Node.js</span><span>Express.js</span><span>node-vibrant</span>
           </div>
           <a class="project-demo" href="https://lumina-palette-three.vercel.app/" target="_blank" rel="noopener">Live demo →</a>
+
+          <div class="video-frame">
+            <video controls preload="metadata" poster="videos/lumina-palette-poster.jpg">
+              <source src="videos/lumina-palette.mp4" type="video/mp4">
+              <p class="video-fallback">Your browser can't play this video. <a href="videos/lumina-palette.mp4">Download it here</a>.</p>
+            </video>
+          </div>
         </div>
       </article>
 
@@ -451,6 +464,13 @@
             <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span>
           </div>
           <a class="project-demo" href="https://smart-task-manager-frontend-ashen.vercel.app/" target="_blank" rel="noopener">Live demo →</a>
+
+          <div class="video-frame">
+            <video controls preload="metadata" poster="videos/smart-task-manager-poster.jpg">
+              <source src="videos/smart-task-manager.mp4" type="video/mp4">
+              <p class="video-fallback">Your browser can't play this video. <a href="videos/smart-task-manager.mp4">Download it here</a>.</p>
+            </video>
+          </div>
         </div>
       </article>
 
