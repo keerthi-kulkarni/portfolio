@@ -154,17 +154,18 @@
     display:flex; align-items:center; justify-content:center;
     font-family: var(--font-mono); font-size:0.6rem; color: var(--cyan);
     animation: spin 22s linear infinite;
+    transform: translate(-50%, -50%);
   }
   .orbit-dot span{ display:block; animation: spin-rev 22s linear infinite; }
-  .od1{ top:-17px; left:50%; margin-left:-17px; animation-duration:18s; }
-  .od2{ bottom: 18%; right:-17px; animation-duration:26s; animation-direction:reverse; }
-  .od3{ bottom: -17px; left: 18%; animation-duration:22s; }
-  .od4{ top: 22%; left:-17px; animation-duration:30s; animation-direction:reverse; }
+  .od1{ top:0%;   left:50%; animation-duration:18s; }
+  .od2{ top:82%;  left:100%; animation-duration:26s; animation-direction:reverse; }
+  .od3{ top:100%; left:18%;  animation-duration:22s; }
+  .od4{ top:22%;  left:0%;   animation-duration:30s; animation-direction:reverse; }
 
-  @keyframes spin{ from{ transform: rotate(0deg) translateX(0); } to{ transform: rotate(360deg) translateX(0); } }
+  @keyframes spin{ from{ transform: translate(-50%,-50%) rotate(0deg); } to{ transform: translate(-50%,-50%) rotate(360deg); } }
 
   @media (prefers-reduced-motion: reduce){
-    .orbit-dot{ animation:none; }
+    .orbit-dot{ animation:none; transform: translate(-50%, -50%); }
   }
 
   /* ---------- Stats strip ---------- */
