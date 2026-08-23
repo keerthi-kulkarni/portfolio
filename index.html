@@ -46,6 +46,8 @@
   :focus-visible{ outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 3px; }
 
   .wrap{ max-width: var(--maxw); margin:0 auto; padding: 0 28px; }
+  @media (max-width:680px){ .wrap{ padding: 0 20px; } }
+  @media (max-width:420px){ .wrap{ padding: 0 16px; } }
 
   .grad-text{
     background: var(--grad);
@@ -61,7 +63,7 @@
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--line);
   }
-  nav.wrap{ display:flex; align-items:center; justify-content:space-between; padding: 16px 28px; }
+  nav.wrap{ display:flex; align-items:center; justify-content:space-between; padding-top: 16px; padding-bottom: 16px; }
   .logo{
     width: 38px; height:38px; border-radius: 11px;
     background: var(--grad);
@@ -90,6 +92,7 @@
   /* ---------- Hero ---------- */
   .hero{ padding: 76px 0 60px; display:grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items:center; }
   @media (max-width:820px){ .hero{ grid-template-columns:1fr; } }
+  @media (max-width:680px){ .hero{ padding: 44px 0 40px; } }
 
   .eyebrow{
     font-family: var(--font-mono); font-size:0.78rem; color: var(--cyan);
@@ -165,6 +168,7 @@
   }
   @media (max-width:680px){ .stats{ grid-template-columns: repeat(2,1fr); } }
   .stat{ background: var(--bg-1); padding: 24px 20px; text-align:center; }
+  @media (max-width:680px){ .stat{ padding: 18px 12px; } }
   .stat b{
     display:block; font-family: var(--font-display); font-size:1.7rem; font-weight:800; margin-bottom:4px;
   }
@@ -172,6 +176,7 @@
 
   /* ---------- Section shell ---------- */
   section{ padding: 66px 0; }
+  @media (max-width:680px){ section{ padding: 44px 0; } }
   .section-head{ margin-bottom: 34px; }
   .section-head .eyebrow{ margin-bottom:8px; }
   h2{ font-family: var(--font-display); font-size:1.7rem; font-weight:700; margin:0; }
@@ -217,7 +222,7 @@
     transition: border-color .2s ease;
   }
   .project-card:hover{ border-color: var(--cyan); }
-  @media (max-width:640px){ .project-card{ grid-template-columns:1fr; } }
+  @media (max-width:640px){ .project-card{ grid-template-columns:1fr; padding: 22px; gap: 12px; } }
   .project-num{
     font-family: var(--font-display); font-weight:800; font-size:1.6rem;
     color: transparent; -webkit-text-stroke: 1px var(--muted); align-self:start;
@@ -275,6 +280,7 @@
     background: var(--bg-1); border:1px solid var(--line); border-radius:22px;
     padding: 56px 40px; text-align:center;
   }
+  @media (max-width:640px){ .contact-box{ padding: 36px 22px; } }
   .contact-box h2{ font-size: clamp(1.7rem, 4vw, 2.4rem); margin-bottom:10px; }
   .contact-box p{ color: var(--muted); margin: 0 0 30px; }
   .contact-links{ display:flex; flex-wrap:wrap; gap:12px; justify-content:center; }
@@ -519,7 +525,7 @@
         <a href="tel:+919390650379">+91 93906 50379</a>
         <a href="https://www.linkedin.com/in/keerthi-kulkarni-a6829136b/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/keerthi-kulkarni" target="_blank" rel="noopener">GitHub</a>
-        <a href="#" target="_blank" rel="noopener">LeetCode</a>
+        <a href="https://leetcode.com/u/KeerthiKulkarni/" target="_blank" rel="noopener">LeetCode</a>
       </div>
     </div>
   </section>
